@@ -1,0 +1,80 @@
+2023-11-02 22:55:14.740199 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 305, in __call__
+    random_state=self.seed,
+AttributeError: 'logRegClassificationEvaluator' object has no attribute 'seed'
+
+
+2023-11-02 22:58:24.127725 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 305, in __call__
+    random_state=self.seed,
+AttributeError: 'logRegClassificationEvaluator' object has no attribute 'seed'
+
+
+2023-11-03 02:31:01.050260 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 346, in __call__
+    print(np.concatenate((self.sentences_test,self.y_test),axis = 1))
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 2 dimension(s) and the array at index 1 has 1 dimension(s)
+
+
+2023-11-03 15:05:16.561627 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 346, in __call__
+    print(np.hstack(self.sentences_test,self.y_test))
+TypeError: hstack() takes 1 positional argument but 2 were given
+
+
+2023-11-03 15:09:19.348644 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 346, in __call__
+    print(np.hstack((self.sentences_test,self.y_test)))
+  File "/Users/nidhichowdhry/Library/Python/3.9/lib/python/site-packages/numpy/core/shape_base.py", line 359, in hstack
+    return _nx.concatenate(arrs, 1, dtype=dtype, casting=casting)
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 2 dimension(s) and the array at index 1 has 1 dimension(s)
+
+
+2023-11-03 16:00:12.505038 >>> EmotionClassification
+Traceback (most recent call last):
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/MTEB.py", line 241, in run
+    results = task.evaluate(model, split, batch_size=my_args.batch_size, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 58, in evaluate
+    scores = self._evaluate_monolingual(model, self.dataset, eval_split, train_split, **kwargs)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/abstasks/AbsTaskClassification.py", line 93, in _evaluate_monolingual
+    scores_exp, test_cache = evaluator(model, test_cache=test_cache)
+  File "/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB/mteb/evaluation/evaluators/ClassificationEvaluator.py", line 346, in __call__
+    stacked_sentences = np.hstack((self.sentences_test,self.y_test.reshape(-1,1),y_pred.reshape(-1,1)))
+AttributeError: 'list' object has no attribute 'reshape'
+
+

@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "evaluation/MTEB/examples/evaluate_model.py",
+             "args" : [
+            "--model_name", "hkunlp/instructor-base",
+            "--output_dir", "outputs",
+            "--task_name", "EmotionClassification",
+            "--result_file", "results"
+             ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                 "PYTHONPATH":"${PYTHONPATH}:/Users/nidhichowdhry/Documents/GMU/CS 678/Project/instructor-embedding/evaluation/MTEB"
+             }
+
+        }
+    ]
+}

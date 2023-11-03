@@ -13,11 +13,13 @@ class AbsTask(ABC):
         self.is_crosslingual = False
         self.save_suffix = kwargs.get("save_suffix", "")
 
-        self.seed = seed
-        random.seed(self.seed)
-        np.random.seed(self.seed)
-        torch.manual_seed(self.seed)
-        torch.cuda.manual_seed_all(self.seed)
+        self.seed = torch.initial_seed()
+
+        #commented by Nidhi
+        # random.seed(self.seed)
+        # np.random.seed(self.seed)
+        # torch.manual_seed(self.seed)
+        # torch.cuda.manual_seed_all(self.seed)
 
 
     def load_data(self, **kwargs):

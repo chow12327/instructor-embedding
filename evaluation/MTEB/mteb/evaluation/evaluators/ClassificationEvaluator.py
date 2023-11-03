@@ -199,6 +199,7 @@ class kNNClassificationEvaluatorPytorch(Evaluator):
             max_accuracy = max(max_accuracy, accuracy)
             max_f1 = max(max_f1, f1)
             max_ap = max(max_ap, ap)
+          
         scores["accuracy"] = max_accuracy
         scores["f1"] = max_f1
         scores["ap"] = max_ap
@@ -323,9 +324,11 @@ class logRegClassificationEvaluator(Evaluator):
                 new_sentences.append([DEFINITIONS[self.args.prompt][self.args.task_name], s, 0])
             self.sentences_test = new_sentences
 
+        #Nidhi: training data embeddings
         X_train = np.asarray(model.encode(self.sentences_train, batch_size=self.batch_size))
         logger.info(f"Encoding {len(self.sentences_test)} test sentences...")
         # if test_cache is None:
+        #Nidhi: test data embeddings
         X_test = np.asarray(model.encode(self.sentences_test, batch_size=self.batch_size))
         test_cache = X_test
         # else:
@@ -338,6 +341,12 @@ class logRegClassificationEvaluator(Evaluator):
         f1 = f1_score(self.y_test, y_pred, average="macro")
         scores["accuracy"] = accuracy
         scores["f1"] = f1
+        #Added by Nidhi
+    
+        stacked_sentences = np.hstack((self.sentences_test,np.array(self.y_test).reshape(-1,1),y_pred.reshape(-1,1)))
+        logger.info(stacked_sentences[np.where(stacked_sentences[:,3] != stacked_sentences[:,4])])
+       # np.concatenate self.sentences_test[:, 3] = y_pred
+            
 
         # if binary classification
         if len(np.unique(self.y_train)) == 2:

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mteb
+Version: 1.0.0
+Summary: Massive Text Embedding Benchmark
+Home-page: https://github.com/embeddings-benchmark/mteb
+Author: MTEB Contributors (https://github.com/embeddings-benchmark/mteb/graphs/contributors)
+Author-email: niklas@huggingface.co, nouamane@huggingface.co, info@nils-reimers.de
+License: Apache
+Project-URL: Huggingface Organization, https://huggingface.co/mteb
+Project-URL: Source Code, https://github.com/embeddings-benchmark/mteb
+Keywords: deep learning,text embeddings,benchmark
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: datasets>=2.2.0
+Requires-Dist: pyarrow==8.0.0
+Requires-Dist: jsonlines
+Requires-Dist: numpy
+Requires-Dist: requests>=2.26.0
+Requires-Dist: scikit_learn>=1.0.2
+Requires-Dist: scipy
+Requires-Dist: sentence_transformers>=2.2.0
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: rich
+Provides-Extra: beir
+Requires-Dist: beir; extra == "beir"

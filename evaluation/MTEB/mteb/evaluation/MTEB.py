@@ -5,6 +5,7 @@ import pathlib
 import traceback
 from datetime import datetime
 from time import time
+import sys
 
 import datasets
 from rich.console import Console
@@ -287,5 +288,6 @@ class MTEB:
         if os.path.isdir(my_args.result_file):
             my_args.result_file = os.path.join(my_args.result_file,f'{task_name}.txt')
         with open(my_args.result_file,'a') as f:
+            f.write(f'{task_name}: {torch.initial_seed()}: {r}\n')
             f.write(f'{task_name}: {my_args.model_name}: {r}\n')
         return evaluation_results

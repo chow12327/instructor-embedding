@@ -241,6 +241,8 @@ class INSTRUCTOR_Transformer(Transformer):
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name_or_path if tokenizer_name_or_path is not None else model_name_or_path, cache_dir=cache_dir, **tokenizer_args)
 
+        
+
         #No max_seq_length set. Try to infer from model
         # print('max_seq_length ', max_seq_length)
         if max_seq_length is None:
