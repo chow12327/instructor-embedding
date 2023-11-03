@@ -28,7 +28,6 @@ class AbsTaskClassification(AbsTask):
         self.batch_size = batch_size
         self.method = method
 
-        # Bootstrap parameters
         self.n_experiments = n_experiments if n_experiments is not None else self.description.get("n_experiments", 10)
         self.samples_per_label = (
             samples_per_label if samples_per_label is not None else self.description.get("samples_per_label", 8)
@@ -65,6 +64,19 @@ class AbsTaskClassification(AbsTask):
         eval_split = dataset[eval_split]
         params = {"k": self.k, "batch_size": self.batch_size}
         params.update(kwargs)
+
+        #Nidhi - added to update params from command line arguments
+        self.args = kwargs['args']
+
+        if self.args.samples_per_label>0:
+            self.samples_per_label = self.args.samples_per_label
+       
+        if self.args.n_experiments>0:
+            self.n_experiments = self.args.n_experiments
+        
+        if self.args.batch_size>0:
+            self.batch_size = self.args.batch_size
+       
 
         scores = []
         test_cache, idxs = None, None  # we store idxs to make the shuffling reproducible

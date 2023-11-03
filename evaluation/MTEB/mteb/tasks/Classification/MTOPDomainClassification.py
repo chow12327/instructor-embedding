@@ -21,4 +21,6 @@ class MTOPDomainClassification(MultilingualTask, AbsTaskClassification):
             "eval_langs": _LANGUAGES,
             "main_score": "accuracy",
             "revision": "d80d48c1eb48d3562165c59d59d0034df9fff0bf",
+            "n_experiments": 5,
+            "samples_per_label": 2,
         }

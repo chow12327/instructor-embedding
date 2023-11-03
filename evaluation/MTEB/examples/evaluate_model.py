@@ -30,22 +30,25 @@ if __name__ == '__main__':
     parser.add_argument('--prompt', default=None,type=str)
     parser.add_argument('--split', default='test',type=str)
     parser.add_argument('--batch_size', default=128,type=int)
+    parser.add_argument('--samples_per_label', default=16,type=int)
+    parser.add_argument('--n_experiments', default=8,type=int)
+    parser.add_argument('--seed', default=25,type=int)
+    
     args = parser.parse_args()
 
     if not args.result_file.endswith('.txt') and not os.path.isdir(args.result_file):
         os.makedirs(args.result_file,exist_ok=True)
 
-    seeds = [30,42,89,120,26,19]
+    #seeds = [30,42,89,120,26,19]
     # from tqdm import tqdm
     # from functools import partialmethod
     #
     # tqdm.__init__ = partialmethod(tqdm.__init__, disable=True)
 
-
-    for x in seeds:
-        set_seed(x)
-        model = INSTRUCTOR(args.model_name,cache_folder=args.cache_dir)
-        evaluation = MTEB(tasks=[args.task_name],task_langs=["en"])
-        evaluation.run(model, output_folder=args.output_dir, eval_splits=[args.split],args=args,)
+    seed = args.seed
+    set_seed(seed)
+    model = INSTRUCTOR(args.model_name,cache_folder=args.cache_dir)
+    evaluation = MTEB(tasks=[args.task_name],task_langs=["en"])
+    evaluation.run(model, output_folder=args.output_dir, eval_splits=[args.split],args=args,)
 
     print("--DONE--")
