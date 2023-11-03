@@ -1,5 +1,10 @@
 from ...abstasks import AbsTaskClassification
 
+#Added by Nidhi. Will be used for Project part 2.
+#Only running on English for project Part 1
+
+#_LANGUAGES = ["en", "de", "es", "fr", "hi", "th"]
+_LANGUAGES = ["en"]
 
 class EmotionClassification(AbsTaskClassification):
     @property
@@ -15,7 +20,7 @@ class EmotionClassification(AbsTaskClassification):
             "category": "s2s",
             "type": "Classification",
             "eval_splits": ["validation", "test"],
-            "eval_langs": ["en"],
+            "eval_langs": _LANGUAGES,
             "main_score": "accuracy",
             "n_experiments": 10,
             "samples_per_label": 16,

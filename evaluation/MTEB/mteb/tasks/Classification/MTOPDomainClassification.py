@@ -1,7 +1,10 @@
 from ...abstasks import AbsTaskClassification, MultilingualTask
 
+#commented by Nidhi
+#Only running on English for project Part 1
 
-_LANGUAGES = ["en", "de", "es", "fr", "hi", "th"]
+#_LANGUAGES = ["en", "de", "es", "fr", "hi", "th"]
+_LANGUAGES = ["en"]
 
 
 class MTOPDomainClassification(MultilingualTask, AbsTaskClassification):
