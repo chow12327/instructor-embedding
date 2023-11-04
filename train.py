@@ -433,7 +433,7 @@ def main():
     )
 
     set_seed(training_args.seed)
-    with open(os.path.join(model_args.cache_dir, 'medi-wiki.json')) as f:
+    with open(os.path.join(model_args.cache_dir, 'medi_wiki.json')) as f:
         train_examples_raw = json.load(f)
 
     if data_args.debug_mode:
