@@ -4,16 +4,45 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        //!python instructor-embedding/train.py --model_name_or_path sentence-transformers/gtr-t5-base
+        // --output_dir outputs  --cache_dir instructor-embedding/train_cache/ 
+        //--max_source_length 512 --num_train_epochs 10 --save_steps 500 --cl_temperature 0.1 
+        //--warmup_ratio 0.1 --learning_rate 2e-5 --overwrite_output_dir
+
+        {
+            "name": "trainer",
+            "type": "python",
+            "request": "launch",
+            "program": "train.py",
+             "args" : [
+            "--model_name_or_path", "sentence-transformers/gtr-t5-base",
+            "--output_dir", "outputs",
+            "--cache_dir", "train_cache",
+            "--max_source_length", "512",
+            "--num_train_epochs", "5",
+            "--save_steps", "500",
+            "--cl_temperature", "0.1",
+            "--warmup_ratio", "0.1",
+            "--learning_rate", "2e-5",
+            "--overwrite_output_dir", "true",
+            "--data_seed", "30"
+             ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        },
+
         {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "evaluation/MTEB/examples/evaluate_model.py",
              "args" : [
-            "--model_name", "hkunlp/instructor-base",
+            "--model_name", "models/outputs_l2e_4/",
             "--output_dir", "outputs",
-            "--task_name", "EmotionClassification",
-            "--result_file", "results"
+            "--task_name", "MTOPDomainClassification",
+            "--result_file", "results",
+            "--batch_size", "64"
              ],
             "console": "integratedTerminal",
             "justMyCode": true,
