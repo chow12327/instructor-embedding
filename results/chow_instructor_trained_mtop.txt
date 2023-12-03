@@ -1,0 +1,1546 @@
+
+Lmod is automatically replacing "gnu9/9.3.0" with "gnu10/10.3.0-ya".
+
+
+Inactive Modules:
+  1) hwloc/2.1.0     2) libfabric     3) openmpi4
+
+The following have been reloaded with a version change:
+  1) ucx/1.12.1-4g => ucx/1.12.1-o7
+
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: chow12327/instructor_wikionly
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:mteb.evaluation.MTEB:
+
+## Evaluating 1 tasks:
+INFO:mteb.evaluation.MTEB:
+
+********************** Evaluating MTOPDomainClassification **********************
+INFO:mteb.evaluation.MTEB:Loading dataset for MTOPDomainClassification
+INFO:mteb.abstasks.AbsTaskClassification:========== Experiment 1/5 ==========
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 88 training sentences...
+/home/nchowdhr/miniconda/envs/instructor/lib/python3.7/site-packages/checklist/text_generation.py:171: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:230.)
+  to_pred = torch.tensor(to_pred, device=self.device).to(torch.int64)
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 4386 test sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Fitting logistic regression classifier...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect vocab sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['send news via Facebook that comes to you later' '0' '10']
+ ['send news via Facebook that gets to you later' '0' '10']
+ ['Text Josh to let him know about bringing potato salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing taco salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing chicken salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing fruit salad to his party next weekend.'
+  '0' '9']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel i must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a major negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel everyone must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a lasting negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel you must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a significant negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i feel more violent than ever right now' '3' '2']
+ ['i am more violent than ever right now' '3' '2']
+ ['i Am more violent than ever right now' '3' '2']
+ ['i is more violent than ever right now' '3' '10']
+ ['i m more violent than ever right now' '3' '2']
+ ['i Feel more violent than ever right now' '3' '2']
+ ['i r more violent than ever right now' '3' '10']
+ ['i think more violent than ever right now' '3' '10']
+ ['i feels more violent than ever right now' '3' '10']
+ ['i believe more violent than ever right now' '3' '10']
+ ['i feel more frustrated and annoyed by their behavior' '3' '1']
+ ['i feel more frustrated and annoyed by their actions' '3' '1']
+ ['i feel more confused and annoyed by their behavior' '3' '7']
+ ['i feel more confused and annoyed by their actions' '3' '7']
+ ['i feel more frustrated and annoyed by their incompetence' '3' '1']
+ ['i feel more alienated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their inaction' '3' '1']
+ ['i feel more frustrated and annoyed by their behaviour' '3' '1']
+ ['i feel more isolated and annoyed by their behavior' '3' '7']
+ ['i feel more disgusted and annoyed by their behavior' '3' '7']
+ ['i cannot explain why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please break my heart i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please be my friend i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please open my heart i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please take my advice i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please shake my hand i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot say why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please read my blog i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please hold my hand i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please bless my heart i have heart and im not a heartless person'
+  '3' '7']
+ ['im all cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im being cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly bored' '3' '2']
+ ['im totally cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im completely cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im always cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly happy' '3' '9']
+ ['im all cooped up and impatient and annoyingly impatient' '3' '1']
+ ['im all cooped up and impatient and annoyingly loud' '3' '4']
+ ['im all cooped up and impatient and annoyingly slow' '3' '1']
+ ['I would like to be available at noon please' '6' '1']
+ ['I would like to be there at noon please' '6' '2']
+ ['I would like to be seated at noon please' '6' '1']
+ ['I would like to be here at noon please' '6' '1']
+ ['I would like to be released at noon please' '6' '1']
+ ['I would like to be back at noon please' '6' '1']
+ ['I would like to be called at noon please' '6' '1']
+ ['I would like to be dismissed at noon please' '6' '8']
+ ['show me who is friends with you' '7' '0']
+ ['show me who is friends with me' '7' '0']
+ ['show me who is friends with her' '7' '0']
+ ['Show Text of Jolene' '7' '0']
+ ['Did I set a reminder for my 6 am appointment' '8' '6']
+ ['Delete my reminder to visit Liberty University' '8' '2']
+ ['Delete my reminder to attend Liberty University' '8' '7']
+ ['Delete my reminder to join Liberty University' '8' '7']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the funeral"
+  '8' '1']
+ ["I need to be reminded on Tuesday to send gifts to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the memorial"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send this to Joyce's daughter for the weekend"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the flowers"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send this to Joyce's daughter for the week"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the weekend"
+  '8' '0']
+ ['What did Congress vote on ?' '10' '1']
+ ['What did Congress agree on ?' '10' '1']
+ ['What did Congress vote on Edit' '10' '1']
+ ['What did Congress vote on today' '10' '1']
+ ['What did Congress agree on Edit' '10' '1']
+ ['What did Congress vote on next' '10' '1']
+ ['What did Congress disagree on ?' '10' '1']
+ ['What did Congress vote on »' '10' '1']
+ ['What did Congress vote on …' '10' '1']
+ ['What did Congress disagree on Edit' '10' '1']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect robustness sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['i feel more ivolent than ever right now' '0' '2']
+ ['Set an alarm for p9m –' '0' '6']
+ ['please hsow your calls from mary from last week' '0' '1']
+ ...
+ ['call for granddaugther' '10' '1']
+ ['Play some Hot Rap umsic.' '10' '4']
+ ['Message Joe to say you will be there i nan instant' '10' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect ner sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Negative sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Positive sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Vocab
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8345454545454546
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7986300601637606
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07272727272727272
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.06774052017297671
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:NER
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:negative
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:positive
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'मुझे 2018 में संगीत समारोहों की तारीखें दिखाएँ' '0' '2' '7']
+ ['Represent a sentence: ' 'क्या इस सप्ताह कोई बवंडर आया है?' '0' '5' '7']
+ ['Represent a sentence: ' 'एक अलग अलार्म सेट करें' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'लैरी को यह बताने के लिए एक अनुस्मारक सेट करें कि गेम सुबह 11 बजे ऑनलाइन बिक्री के लिए उपलब्ध होगा'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'अगले सोमवार को सुबह सबसे पहले कुत्ते को पशु चिकित्सक के पास लाने के लिए एक अनुस्मारक सेट करें'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'क्या आपको कृपया इसी तरह की कुछ और घटनाएँ मिल सकती हैं?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Multilinguality Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Hindi
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10054719562243503
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.05019254902039427
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Erinnere mich um 20 Uhr daran, „Orange Is The New Black“ anzusehen'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Erinnern Sie mich daran, das Katzenstreu um 15:00 Uhr zu wechseln.'
+  '0' '8' '3']
+ ['Represent a sentence: ' 'Wie sieht die Prognose für die Woche aus?'
+  '0' '5' '7']
+ ...
+ ['Represent a sentence: ' 'Wie viel Regen wird für morgen vorhergesagt?'
+  '0' '5' '6']
+ ['Represent a sentence: '
+  'Löschen Sie die Erinnerung an Joes Party nächste Woche' '0' '8' '2']
+ ['Represent a sentence: '
+  'Bleibe bei iheartradio als meiner Standardeinstellung' '0' '4' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:German
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6023711810305518
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6268465751244192
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Δείξτε μου ημερομηνίες για μουσικά φεστιβάλ το 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'υπήρξαν ανεμοστρόβιλοι αυτή την εβδομάδα;'
+  '0' '5' '7']
+ ['Represent a sentence: ' 'Ρυθμίστε ένα διαφορετικό ξυπνητήρι' '0' '6'
+  '7']
+ ...
+ ['Represent a sentence: '
+  'βάλτε μια υπενθύμιση για να πείτε στον Λάρι ότι το παιχνίδι θα κυκλοφορήσει στις 11 π.μ. online'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Ορίστε μια υπενθύμιση για να φέρετε τον σκύλο στον κτηνίατρο την επόμενη Δευτέρα το πρώτο πράγμα το πρωί'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Μπορείτε να λάβετε κάποιες άλλες παρόμοιες εκδηλώσεις παρακαλώ;' '0'
+  '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Greek
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.14158686730506156
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1294881588048733
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Muéstrame fechas de festivales de música en 2018.' '0' '2' '4']
+ ['Represent a sentence: ' '¿Ha habido tornados esta semana?' '0' '5' '2']
+ ['Represent a sentence: '
+  'Recuérdame a las 8 p.m. que vea Orange Is The New Black' '0' '8' '6']
+ ...
+ ['Represent a sentence: '
+  'establecer un recordatorio para decirle a Larry que el juego sale a la venta en línea a las 11 a.m.'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Muéstrame los cumpleaños de los padres de Takisha Guyon MD' '0' '7'
+  '9']
+ ['Represent a sentence: '
+  'Establece un recordatorio para llevar al perro al veterinario el próximo lunes a primera hora de la mañana'
+  '0' '8' '3']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Spanish
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5405836753305974
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5418255809139217
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'y a-t-il eu des tornades cette semaine ?' '0'
+  '5' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi à 20h pour regarder Orange Is The New Black' '0' '8' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi de changer la litière du chat à 15h00.' '0' '8' '1']
+ ...
+ ['Represent a sentence: '
+  'supprime le rappel concernant la fête de Joe la semaine prochaine' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'définir un rappel pour informer Larry que le jeu sera mis en vente à 11h en ligne'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Montre-moi les anniversaires des parents de Takisha Guyon MD' '0' '7'
+  '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:French
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.646374829001368
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6665311492779453
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Nionyeshe tarehe za tamasha za muziki mwaka wa 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'kumekuwa na kimbunga wiki hii?' '0' '5' '7']
+ ['Represent a sentence: ' 'Weka kengele tofauti' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'Weka kikumbusho cha kumleta mbwa kwa daktari wa mifugo Jumatatu ijayo jambo la kwanza asubuhi'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'shikamana na iheartradio kama chaguo-msingi langu' '0' '4' '1']
+ ['Represent a sentence: '
+  'Je, unaweza kupata matukio zaidi yanayofanana na haya tafadhali?' '0'
+  '2' '9']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Swahili
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1739626082991336
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.13402589403777224
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'สัปดาห์นี้มีพายุทอร์นาโดไหม?' '0' '5' '7']
+ ['Represent a sentence: ' 'ตั้งปลุกอื่น' '0' '6' '7']
+ ['Represent a sentence: '
+  'เตือนฉันเวลา 20.00 น. เพื่อรับชม Orange Is The New Black' '0' '8' '7']
+ ...
+ ['Represent a sentence: '
+  'ตั้งเตือนให้บอกแลร์รี่ว่าเกมจะวางจำหน่ายเวลา 11.00 น. ทางออนไลน์' '0'
+  '8' '7']
+ ['Represent a sentence: '
+  'ตั้งการเตือนให้พาสุนัขไปหาสัตวแพทย์ในวันจันทร์หน้าเป็นอย่างแรกในตอนเช้า'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'คุณช่วยมีกิจกรรมที่คล้ายกันนี้เพิ่มเติมได้ไหม?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Thai
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.12425900592795258
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10139381361368094
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Evaluating...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Remind me to create a Facebook event for back to school party.' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'Read me all the reminders about the cat and what alerts are set?' '0'
+  '8' '6']
+ ['Represent a sentence: ' 'Is Kim online?' '0' '1' '7']
+ ...
+ ['Represent a sentence: ' 'Can you tell me if Luci is online now' '0'
+  '1' '7']
+ ['Represent a sentence: ' 'Details on where to vote' '0' '10' '2']
+ ['Represent a sentence: ' 'contact Kinley with Messenger' '0' '1' '0']]
+INFO:mteb.abstasks.AbsTaskClassification:========== Experiment 2/5 ==========
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 88 training sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 4386 test sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Fitting logistic regression classifier...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect vocab sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['send news via Facebook that comes to you later' '0' '10']
+ ['Text Josh to let him know about bringing a salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing potato salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing taco salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing the salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing some salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing his salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing chicken salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing fruit salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing my salad to his party next weekend.'
+  '0' '9']
+ ['please show all calls from mary from last week' '1' '0']
+ ['please show missed calls from mary from last week' '1' '0']
+ ['please show any calls from mary from last week' '1' '0']
+ ['please show the calls from mary from last week' '1' '0']
+ ['please show all calls from mary from last month' '1' '0']
+ ['please show your calls from mary from last week' '1' '0']
+ ['please show all calls from mary from last year' '1' '0']
+ ['please show missed calls from mary from last month' '1' '0']
+ ['please show the calls from mary from last night' '1' '0']
+ ['please show missed calls from mary from last year' '1' '0']
+ ['call my granddaughter' '1' '0']
+ ['call to granddaughter' '1' '0']
+ ['Add message to phonecall' '1' '0']
+ ['Add text to phonecall' '1' '0']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel i must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a major negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel everyone must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a lasting negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel you must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a significant negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i feel more violent than ever right now' '3' '10']
+ ['i am more violent than ever right now' '3' '10']
+ ['i Am more violent than ever right now' '3' '10']
+ ['i is more violent than ever right now' '3' '10']
+ ['i m more violent than ever right now' '3' '10']
+ ['i Feel more violent than ever right now' '3' '10']
+ ['i r more violent than ever right now' '3' '10']
+ ['i think more violent than ever right now' '3' '10']
+ ['i feels more violent than ever right now' '3' '10']
+ ['i believe more violent than ever right now' '3' '10']
+ ['i feel more frustrated and annoyed by their behavior' '3' '1']
+ ['i feel more frustrated and annoyed by their actions' '3' '1']
+ ['i feel more confused and annoyed by their behavior' '3' '1']
+ ['i feel more confused and annoyed by their actions' '3' '1']
+ ['i feel more frustrated and annoyed by their incompetence' '3' '1']
+ ['i feel more alienated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their inaction' '3' '1']
+ ['i feel more frustrated and annoyed by their behaviour' '3' '1']
+ ['i feel more isolated and annoyed by their behavior' '3' '7']
+ ['i feel more disgusted and annoyed by their behavior' '3' '7']
+ ['i cannot explain why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please break my heart i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please be my friend i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please open my heart i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please take my advice i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please shake my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot say why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please read my blog i have heart and im not a heartless person'
+  '3' '9']
+ ['i cannot explain why but i need to say please hold my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please bless my heart i have heart and im not a heartless person'
+  '3' '1']
+ ['im all cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im being cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly bored' '3' '1']
+ ['im totally cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im completely cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im always cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly happy' '3' '4']
+ ['im all cooped up and impatient and annoyingly impatient' '3' '1']
+ ['im all cooped up and impatient and annoyingly loud' '3' '4']
+ ['im all cooped up and impatient and annoyingly slow' '3' '4']
+ ['I would like to be available at noon please' '6' '1']
+ ['I would like to be there at noon please' '6' '2']
+ ['I would like to be seen at noon please' '6' '1']
+ ['I would like to be seated at noon please' '6' '1']
+ ['I would like to be here at noon please' '6' '1']
+ ['I would like to be released at noon please' '6' '1']
+ ['I would like to be heard at noon please' '6' '1']
+ ['I would like to be back at noon please' '6' '1']
+ ['I would like to be called at noon please' '6' '1']
+ ['I would like to be dismissed at noon please' '6' '8']
+ ['Who transferred from Creighton' '7' '1']
+ ['Who is from Creighton' '7' '1']
+ ['Who withdrew from Creighton' '7' '1']
+ ['Who separates from Creighton' '7' '1']
+ ['Who are from Creighton' '7' '2']
+ ['Who comes from Creighton' '7' '1']
+ ['Who recruited from Creighton' '7' '1']
+ ['Show Photos of Jolene' '7' '1']
+ ['Show Transcript of Jolene' '7' '1']
+ ['Show photos of Jolene' '7' '1']
+ ['Show Photo of Jolene' '7' '1']
+ ['Show Courtesy of Jolene' '7' '1']
+ ['Show photo of Jolene' '7' '1']
+ ['Show List of Jolene' '7' '1']
+ ['Show Best of Jolene' '7' '4']
+ ['Show Hide of Jolene' '7' '1']
+ ['Show Text of Jolene' '7' '1']
+ ['Delete my reminder to visit Liberty University' '8' '2']
+ ['Delete my reminder to contact Liberty University' '8' '0']
+ ['Delete my reminder to attend Liberty University' '8' '2']
+ ['Delete my reminder to join Liberty University' '8' '1']
+ ['Delete my reminder to call Liberty University' '8' '1']
+ ["I need to be reminded on Tuesday to send gifts to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the memorial"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the flowers"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the weekend"
+  '8' '0']
+ ['What did Congress vote on ?' '10' '1']
+ ['What did Congress agree on ?' '10' '1']
+ ['What did Congress vote on Edit' '10' '1']
+ ['What did Congress vote on today' '10' '1']
+ ['What did Congress agree on Edit' '10' '1']
+ ['What did Congress vote on next' '10' '1']
+ ['What did Congress disagree on ?' '10' '7']
+ ['What did Congress vote on »' '10' '1']
+ ['What did Congress vote on …' '10' '1']
+ ['What did Congress disagree on Edit' '10' '1']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect robustness sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['i feel more ivolent than ever right now' '0' '1']
+ ['Set an alarm for p9m –' '0' '6']
+ ['please hsow your calls from mary from last week' '0' '1']
+ ...
+ ['call for granddaugther' '10' '1']
+ ['Play some Hot Rap umsic.' '10' '4']
+ ['Message Joe to say you will be there i nan instant' '10' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect ner sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Please call Ed Cook' '1' '9']
+ ['Please call Matthew Evans' '1' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Negative sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Positive sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Tell Sarah we will be there' '0' '2']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Vocab
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7781818181818182
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7567461388082924
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07636363636363637
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.06808073012896491
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:NER
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.96
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8068783068783069
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:negative
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:positive
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.9
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8888888888888888
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'मुझे 2018 में संगीत समारोहों की तारीखें दिखाएँ' '0' '2' '8']
+ ['Represent a sentence: ' 'क्या इस सप्ताह कोई बवंडर आया है?' '0' '5' '9']
+ ['Represent a sentence: ' 'एक अलग अलार्म सेट करें' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'मुझे ताकीशा गयोन एमडी के माता-पिता का जन्मदिन दिखाएँ' '0' '7' '0']
+ ['Represent a sentence: '
+  'अगले सोमवार को सुबह सबसे पहले कुत्ते को पशु चिकित्सक के पास लाने के लिए एक अनुस्मारक सेट करें'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'क्या आपको कृपया इसी तरह की कुछ और घटनाएँ मिल सकती हैं?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Multilinguality Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Hindi
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10351117191062471
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07927555632448051
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Erinnere mich um 20 Uhr daran, „Orange Is The New Black“ anzusehen'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Erinnern Sie mich daran, das Katzenstreu um 15:00 Uhr zu wechseln.'
+  '0' '8' '7']
+ ['Represent a sentence: ' 'Wie sieht die Prognose für die Woche aus?'
+  '0' '5' '7']
+ ...
+ ['Represent a sentence: ' 'Wie lange brate ich Hähnchen?' '0' '9' '1']
+ ['Represent a sentence: ' 'Wie mache ich Punsch?' '0' '9' '1']
+ ['Represent a sentence: '
+  'Können Sie mir Unterhaltungsnachrichten für den 25. September geben?'
+  '0' '10' '2']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:German
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6329229366165071
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6563313593197649
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Δείξτε μου ημερομηνίες για μουσικά φεστιβάλ το 2018' '0' '2' '0']
+ ['Represent a sentence: ' 'υπήρξαν ανεμοστρόβιλοι αυτή την εβδομάδα;'
+  '0' '5' '7']
+ ['Represent a sentence: ' 'Ρυθμίστε ένα διαφορετικό ξυπνητήρι' '0' '6'
+  '7']
+ ...
+ ['Represent a sentence: '
+  'βάλτε μια υπενθύμιση για να πείτε στον Λάρι ότι το παιχνίδι θα κυκλοφορήσει στις 11 π.μ. online'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Ορίστε μια υπενθύμιση για να φέρετε τον σκύλο στον κτηνίατρο την επόμενη Δευτέρα το πρώτο πράγμα το πρωί'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Μπορείτε να λάβετε κάποιες άλλες παρόμοιες εκδηλώσεις παρακαλώ;' '0'
+  '2' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Greek
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.151390788873689
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.14427136313268651
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Muéstrame fechas de festivales de música en 2018.' '0' '2' '4']
+ ['Represent a sentence: '
+  'Recuérdame a las 8 p.m. que vea Orange Is The New Black' '0' '8' '6']
+ ['Represent a sentence: '
+  'Recuérdame cambiar la arena para gatos a las 3:00 p.m.' '0' '8' '6']
+ ...
+ ['Represent a sentence: ' '¿Se supone que lloverá hoy en Nueva York?'
+  '0' '5' '7']
+ ['Represent a sentence: ' '¿Cómo hago ponche?' '0' '9' '1']
+ ['Represent a sentence: '
+  'establecer un recordatorio para decirle a Larry que el juego sale a la venta en línea a las 11 a.m.'
+  '0' '8' '1']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Spanish
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5829913360693114
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6060784760745808
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'y a-t-il eu des tornades cette semaine ?' '0'
+  '5' '7']
+ ['Represent a sentence: '
+  'Rappelle-moi à 20h pour regarder Orange Is The New Black' '0' '8' '1']
+ ['Represent a sentence: '
+  'Rappelle-moi de changer la litière du chat à 15h00.' '0' '8' '1']
+ ...
+ ['Represent a sentence: '
+  'supprime le rappel concernant la fête de Joe la semaine prochaine' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'définir un rappel pour informer Larry que le jeu sera mis en vente à 11h en ligne'
+  '0' '8' '1']
+ ['Represent a sentence: '
+  'Définissez un rappel pour amener le chien chez le vétérinaire lundi prochain à la première heure du matin.'
+  '0' '8' '1']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:French
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6666666666666666
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.69040420155272
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Nionyeshe tarehe za tamasha za muziki mwaka wa 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'kumekuwa na kimbunga wiki hii?' '0' '5' '2']
+ ['Represent a sentence: ' 'Weka kengele tofauti' '0' '6' '9']
+ ...
+ ['Represent a sentence: '
+  'weka ukumbusho wa kumwambia larry kwamba mchezo utaanza kuuzwa saa 11 asubuhi mtandaoni'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'Weka kikumbusho cha kumleta mbwa kwa daktari wa mifugo Jumatatu ijayo jambo la kwanza asubuhi'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'Je, unaweza kupata matukio zaidi yanayofanana na haya tafadhali?' '0'
+  '2' '9']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Swahili
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.2051983584131327
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.17017085749388602
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'สัปดาห์นี้มีพายุทอร์นาโดไหม?' '0' '5' '7']
+ ['Represent a sentence: ' 'ตั้งปลุกอื่น' '0' '6' '9']
+ ['Represent a sentence: '
+  'เตือนฉันเวลา 20.00 น. เพื่อรับชม Orange Is The New Black' '0' '8' '9']
+ ...
+ ['Represent a sentence: '
+  'ตั้งเตือนให้บอกแลร์รี่ว่าเกมจะวางจำหน่ายเวลา 11.00 น. ทางออนไลน์' '0'
+  '8' '7']
+ ['Represent a sentence: '
+  'ตั้งการเตือนให้พาสุนัขไปหาสัตวแพทย์ในวันจันทร์หน้าเป็นอย่างแรกในตอนเช้า'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'คุณช่วยมีกิจกรรมที่คล้ายกันนี้เพิ่มเติมได้ไหม?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Thai
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.16666666666666666
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.12867647243517844
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Evaluating...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'can you  enable  video call' '0' '1' '0']
+ ['Represent a sentence: ' 'Tell my mom we made it to Gatlinburg.' '0'
+  '0' '7']
+ ['Represent a sentence: ' 'Is Kim online?' '0' '1' '7']
+ ...
+ ['Represent a sentence: ' 'When is the solar eclipse' '0' '10' '5']
+ ['Represent a sentence: ' 'Details on where to vote' '0' '10' '7']
+ ['Represent a sentence: ' 'contact Kinley with Messenger' '0' '1' '0']]
+INFO:mteb.abstasks.AbsTaskClassification:========== Experiment 3/5 ==========
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 88 training sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 4386 test sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Fitting logistic regression classifier...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect vocab sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['send news via Facebook that comes to you later' '0' '10']
+ ['send news via Facebook that gets to you later' '0' '10']
+ ['Message Joe to say you will be there in an hour' '0' '1']
+ ['Message Joe to say he will be there in an hour' '0' '1']
+ ['Message Joe to say I will be there in an hour' '0' '1']
+ ['Message Joe to say we will be there in an hour' '0' '1']
+ ['Message Joe to say they will be there in an hour' '0' '1']
+ ['Message Joe to say he will be there in an instant' '0' '1']
+ ['Message Joe to say you will be there in an instant' '0' '1']
+ ['Message Joe to say i will be there in an hour' '0' '1']
+ ['Message Joe to say I will be there in an instant' '0' '1']
+ ['Text Josh to let him know about bringing a salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing potato salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing taco salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing some salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing chicken salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing fruit salad to his party next weekend.'
+  '0' '9']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel i must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a major negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel everyone must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a lasting negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel you must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a significant negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i feel more violent than ever right now' '3' '10']
+ ['i am more violent than ever right now' '3' '10']
+ ['i Am more violent than ever right now' '3' '10']
+ ['i is more violent than ever right now' '3' '10']
+ ['i m more violent than ever right now' '3' '10']
+ ['i Feel more violent than ever right now' '3' '10']
+ ['i r more violent than ever right now' '3' '10']
+ ['i think more violent than ever right now' '3' '10']
+ ['i feels more violent than ever right now' '3' '10']
+ ['i believe more violent than ever right now' '3' '10']
+ ['i feel more frustrated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their actions' '3' '1']
+ ['i feel more confused and annoyed by their behavior' '3' '7']
+ ['i feel more confused and annoyed by their actions' '3' '7']
+ ['i feel more frustrated and annoyed by their incompetence' '3' '1']
+ ['i feel more alienated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their inaction' '3' '1']
+ ['i feel more frustrated and annoyed by their behaviour' '3' '7']
+ ['i feel more isolated and annoyed by their behavior' '3' '7']
+ ['i feel more disgusted and annoyed by their behavior' '3' '7']
+ ['i cannot explain why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please break my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please be my friend i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please open my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please take my advice i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please shake my hand i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot say why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please read my blog i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please hold my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please bless my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['im all cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im being cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly bored' '3' '2']
+ ['im totally cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im completely cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im always cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly happy' '3' '4']
+ ['im all cooped up and impatient and annoyingly impatient' '3' '1']
+ ['im all cooped up and impatient and annoyingly loud' '3' '4']
+ ['im all cooped up and impatient and annoyingly slow' '3' '4']
+ ['I would like to be available at noon please' '6' '1']
+ ['I would like to be there at noon please' '6' '2']
+ ['I would like to be seen at noon please' '6' '5']
+ ['I would like to be seated at noon please' '6' '2']
+ ['I would like to be here at noon please' '6' '5']
+ ['I would like to be heard at noon please' '6' '4']
+ ['I would like to be called at noon please' '6' '1']
+ ["Tell me who's working at BuzzFeed." '7' '10']
+ ['Delete my reminder to visit Liberty University' '8' '2']
+ ['Delete my reminder to attend Liberty University' '8' '7']
+ ['Delete my reminder to join Liberty University' '8' '7']
+ ['Delete my reminder to boycott Liberty University' '8' '7']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send gifts to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send it to Joyce's daughter for the review"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the memorial"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send this to Joyce's daughter for the weekend"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the flowers"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send this to Joyce's daughter for the week"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the weekend"
+  '8' '0']
+ ['What did Congress vote on ?' '10' '7']
+ ['What did Congress agree on ?' '10' '7']
+ ['What did Congress vote on Edit' '10' '7']
+ ['What did Congress agree on Edit' '10' '7']
+ ['What did Congress vote on next' '10' '1']
+ ['What did Congress disagree on ?' '10' '4']
+ ['What did Congress vote on »' '10' '7']
+ ['What did Congress vote on …' '10' '7']
+ ['What did Congress disagree on Edit' '10' '4']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect robustness sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['i feel more ivolent than ever right now' '0' '7']
+ ['Set an alarm for p9m –' '0' '6']
+ ['please hsow your calls from mary from last week' '0' '1']
+ ...
+ ['call for granddaugther' '10' '1']
+ ['Play some Hot Rap umsic.' '10' '4']
+ ['Message Joe to say you will be there i nan instant' '10' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect ner sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Please call Matthew Evans' '1' '7']
+ ['Please call Carl Ross' '1' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Negative sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Positive sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Tell Sarah we will be there' '0' '7']
+ ['tell Kristin I am feeling well, need to postpone our lunch' '0' '8']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Vocab
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8218181818181818
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7840911467266138
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07636363636363637
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07141212883550384
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:NER
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.96
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.9595959595959596
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:negative
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:positive
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6857142857142857
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'मुझे 2018 में संगीत समारोहों की तारीखें दिखाएँ' '0' '2' '7']
+ ['Represent a sentence: ' 'क्या इस सप्ताह कोई बवंडर आया है?' '0' '5' '7']
+ ['Represent a sentence: ' 'एक अलग अलार्म सेट करें' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'लैरी को यह बताने के लिए एक अनुस्मारक सेट करें कि गेम सुबह 11 बजे ऑनलाइन बिक्री के लिए उपलब्ध होगा'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'अगले सोमवार को सुबह सबसे पहले कुत्ते को पशु चिकित्सक के पास लाने के लिए एक अनुस्मारक सेट करें'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'क्या आपको कृपया इसी तरह की कुछ और घटनाएँ मिल सकती हैं?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Multilinguality Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Hindi
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10009119927040584
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.04677674656396386
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'Gab es diese Woche Tornados?' '0' '5' '2']
+ ['Represent a sentence: '
+  'Erinnere mich um 20 Uhr daran, „Orange Is The New Black“ anzusehen'
+  '0' '8' '10']
+ ['Represent a sentence: '
+  'Erinnern Sie mich daran, das Katzenstreu um 15:00 Uhr zu wechseln.'
+  '0' '8' '3']
+ ...
+ ['Represent a sentence: '
+  'Können Sie mir Unterhaltungsnachrichten für den 25. September geben?'
+  '0' '10' '2']
+ ['Represent a sentence: '
+  'Löschen Sie die Erinnerung an Joes Party nächste Woche' '0' '8' '2']
+ ['Represent a sentence: '
+  'Richten Sie eine Erinnerung ein, um Larry darüber zu informieren, dass das Spiel um 11 Uhr online in den Verkauf geht'
+  '0' '8' '4']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:German
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5784313725490197
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6033108246925395
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Δείξτε μου ημερομηνίες για μουσικά φεστιβάλ το 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'υπήρξαν ανεμοστρόβιλοι αυτή την εβδομάδα;'
+  '0' '5' '7']
+ ['Represent a sentence: ' 'Ρυθμίστε ένα διαφορετικό ξυπνητήρι' '0' '6'
+  '7']
+ ...
+ ['Represent a sentence: '
+  'βάλτε μια υπενθύμιση για να πείτε στον Λάρι ότι το παιχνίδι θα κυκλοφορήσει στις 11 π.μ. online'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Ορίστε μια υπενθύμιση για να φέρετε τον σκύλο στον κτηνίατρο την επόμενη Δευτέρα το πρώτο πράγμα το πρωί'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Μπορείτε να λάβετε κάποιες άλλες παρόμοιες εκδηλώσεις παρακαλώ;' '0'
+  '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Greek
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.13930688554491563
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.11623636032305154
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' '¿Ha habido tornados esta semana?' '0' '5' '2']
+ ['Represent a sentence: '
+  'Recuérdame a las 8 p.m. que vea Orange Is The New Black' '0' '8' '6']
+ ['Represent a sentence: '
+  'Recuérdame cambiar la arena para gatos a las 3:00 p.m.' '0' '8' '2']
+ ...
+ ['Represent a sentence: '
+  'establecer un recordatorio para decirle a Larry que el juego sale a la venta en línea a las 11 a.m.'
+  '0' '8' '2']
+ ['Represent a sentence: '
+  'Muéstrame los cumpleaños de los padres de Takisha Guyon MD' '0' '7'
+  '2']
+ ['Represent a sentence: '
+  'Establece un recordatorio para llevar al perro al veterinario el próximo lunes a primera hora de la mañana'
+  '0' '8' '2']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Spanish
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.4904240766073871
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5097578881662987
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'y a-t-il eu des tornades cette semaine ?' '0'
+  '5' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi à 20h pour regarder Orange Is The New Black' '0' '8' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi de changer la litière du chat à 15h00.' '0' '8' '2']
+ ...
+ ['Represent a sentence: '
+  'supprime le rappel concernant la fête de Joe la semaine prochaine' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'définir un rappel pour informer Larry que le jeu sera mis en vente à 11h en ligne'
+  '0' '8' '2']
+ ['Represent a sentence: '
+  'Définissez un rappel pour amener le chien chez le vétérinaire lundi prochain à la première heure du matin.'
+  '0' '8' '2']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:French
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.603967168262654
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6315793404250883
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Nionyeshe tarehe za tamasha za muziki mwaka wa 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'kumekuwa na kimbunga wiki hii?' '0' '5' '9']
+ ['Represent a sentence: ' 'Weka kengele tofauti' '0' '6' '9']
+ ...
+ ['Represent a sentence: '
+  'Weka kikumbusho cha kumleta mbwa kwa daktari wa mifugo Jumatatu ijayo jambo la kwanza asubuhi'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'shikamana na iheartradio kama chaguo-msingi langu' '0' '4' '1']
+ ['Represent a sentence: '
+  'Je, unaweza kupata matukio zaidi yanayofanana na haya tafadhali?' '0'
+  '2' '9']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Swahili
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.21249430004559963
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.17465675464448627
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'สัปดาห์นี้มีพายุทอร์นาโดไหม?' '0' '5' '7']
+ ['Represent a sentence: ' 'ตั้งปลุกอื่น' '0' '6' '7']
+ ['Represent a sentence: '
+  'เตือนฉันเวลา 20.00 น. เพื่อรับชม Orange Is The New Black' '0' '8' '7']
+ ...
+ ['Represent a sentence: '
+  'ตั้งเตือนให้บอกแลร์รี่ว่าเกมจะวางจำหน่ายเวลา 11.00 น. ทางออนไลน์' '0'
+  '8' '7']
+ ['Represent a sentence: '
+  'ตั้งการเตือนให้พาสุนัขไปหาสัตวแพทย์ในวันจันทร์หน้าเป็นอย่างแรกในตอนเช้า'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'คุณช่วยมีกิจกรรมที่คล้ายกันนี้เพิ่มเติมได้ไหม?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Thai
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.12745098039215685
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.0990599085527477
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Evaluating...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'have there been any tornados this week?' '0'
+  '5' '10']
+ ['Represent a sentence: ' 'Is Kim online?' '0' '1' '7']
+ ['Represent a sentence: '
+  'were there any murders in Chicago last night?' '0' '10' '2']
+ ...
+ ['Represent a sentence: ' 'Details on where to vote' '0' '10' '7']
+ ['Represent a sentence: ' 'Remind me to watch church on TV Sunday 7am'
+  '0' '8' '6']
+ ['Represent a sentence: ' 'contact Kinley with Messenger' '0' '1' '0']]
+INFO:mteb.abstasks.AbsTaskClassification:========== Experiment 4/5 ==========
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 88 training sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 4386 test sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Fitting logistic regression classifier...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect vocab sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['send news via Facebook that comes to you later' '0' '10']
+ ['send news via Facebook that gets to you later' '0' '10']
+ ['Message Joe to say you will be there in an hour' '0' '8']
+ ['Message Joe to say he will be there in an hour' '0' '1']
+ ['Message Joe to say I will be there in an hour' '0' '8']
+ ['Message Joe to say we will be there in an hour' '0' '8']
+ ['Message Joe to say they will be there in an hour' '0' '1']
+ ['Message Joe to say she will be there in an hour' '0' '1']
+ ['Message Joe to say he will be there in an instant' '0' '1']
+ ['Message Joe to say you will be there in an instant' '0' '1']
+ ['Message Joe to say i will be there in an hour' '0' '8']
+ ['Message Joe to say I will be there in an instant' '0' '1']
+ ['Text Josh to let him know about bringing a salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing potato salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing taco salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing your salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing the salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing some salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing his salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing chicken salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing fruit salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing my salad to his party next weekend.'
+  '0' '9']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel i must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a major negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel everyone must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a lasting negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel you must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i get frustrated that these issues from my past have had a significant negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '1']
+ ['i feel more violent than ever right now' '3' '10']
+ ['i am more violent than ever right now' '3' '10']
+ ['i Am more violent than ever right now' '3' '10']
+ ['i is more violent than ever right now' '3' '10']
+ ['i m more violent than ever right now' '3' '10']
+ ['i Feel more violent than ever right now' '3' '10']
+ ['i r more violent than ever right now' '3' '10']
+ ['i think more violent than ever right now' '3' '10']
+ ['i feels more violent than ever right now' '3' '10']
+ ['i believe more violent than ever right now' '3' '10']
+ ['i feel more frustrated and annoyed by their behavior' '3' '1']
+ ['i feel more frustrated and annoyed by their actions' '3' '1']
+ ['i feel more confused and annoyed by their behavior' '3' '1']
+ ['i feel more confused and annoyed by their actions' '3' '1']
+ ['i feel more frustrated and annoyed by their incompetence' '3' '7']
+ ['i feel more alienated and annoyed by their behavior' '3' '1']
+ ['i feel more frustrated and annoyed by their inaction' '3' '1']
+ ['i feel more frustrated and annoyed by their behaviour' '3' '1']
+ ['i feel more isolated and annoyed by their behavior' '3' '1']
+ ['i feel more disgusted and annoyed by their behavior' '3' '1']
+ ['i cannot explain why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please break my heart i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please be my friend i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please open my heart i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please take my advice i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please shake my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot say why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please read my blog i have heart and im not a heartless person'
+  '3' '7']
+ ['i cannot explain why but i need to say please hold my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please bless my heart i have heart and im not a heartless person'
+  '3' '1']
+ ['im all cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im being cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly bored' '3' '2']
+ ['im totally cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im completely cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im always cooped up and impatient and annoyingly annoying' '3' '1']
+ ['im all cooped up and impatient and annoyingly happy' '3' '4']
+ ['im all cooped up and impatient and annoyingly impatient' '3' '4']
+ ['im all cooped up and impatient and annoyingly loud' '3' '4']
+ ['im all cooped up and impatient and annoyingly slow' '3' '4']
+ ['I would like to be available at noon please' '6' '1']
+ ['I would like to be there at noon please' '6' '2']
+ ['I would like to be seen at noon please' '6' '2']
+ ['I would like to be seated at noon please' '6' '1']
+ ['I would like to be here at noon please' '6' '2']
+ ['I would like to be released at noon please' '6' '3']
+ ['I would like to be heard at noon please' '6' '4']
+ ['I would like to be back at noon please' '6' '3']
+ ['I would like to be called at noon please' '6' '1']
+ ['Show Photos of Jolene' '7' '1']
+ ['Show Transcript of Jolene' '7' '1']
+ ['Show photos of Jolene' '7' '1']
+ ['Show Photo of Jolene' '7' '1']
+ ['Show Courtesy of Jolene' '7' '4']
+ ['Show photo of Jolene' '7' '1']
+ ['Show List of Jolene' '7' '4']
+ ['Show Best of Jolene' '7' '4']
+ ['Show Hide of Jolene' '7' '1']
+ ['Show Text of Jolene' '7' '0']
+ ['Delete my reminder to attend Liberty University' '8' '7']
+ ['Delete my reminder to join Liberty University' '8' '7']
+ ['Delete my reminder to call Liberty University' '8' '1']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the funeral"
+  '8' '1']
+ ["I need to be reminded on Tuesday to send gifts to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the memorial"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the holidays"
+  '8' '0']
+ ['What did Congress vote on ?' '10' '1']
+ ['What did Congress agree on ?' '10' '9']
+ ['What did Congress vote on Edit' '10' '7']
+ ['What did Congress vote on today' '10' '1']
+ ['What did Congress agree on Edit' '10' '7']
+ ['What did Congress vote on next' '10' '1']
+ ['What did Congress disagree on ?' '10' '7']
+ ['What did Congress vote on »' '10' '7']
+ ['What did Congress vote on …' '10' '7']
+ ['What did Congress disagree on Edit' '10' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect robustness sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['i feel more ivolent than ever right now' '0' '7']
+ ['Set an alarm for p9m –' '0' '6']
+ ['please hsow your calls from mary from last week' '0' '1']
+ ...
+ ['call for granddaugther' '10' '1']
+ ['Play some Hot Rap umsic.' '10' '4']
+ ['Message Joe to say you will be there i nan instant' '10' '1']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect ner sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Negative sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Positive sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Tell Sarah we will be there' '0' '1']
+ ['tell Kristin I am feeling well, need to postpone our lunch' '0' '8']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Vocab
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8018181818181818
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7695608943319826
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07636363636363637
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.06928415554480863
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:NER
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:negative
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:positive
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.7666666666666666
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'मुझे 2018 में संगीत समारोहों की तारीखें दिखाएँ' '0' '2' '7']
+ ['Represent a sentence: ' 'क्या इस सप्ताह कोई बवंडर आया है?' '0' '5' '7']
+ ['Represent a sentence: ' 'एक अलग अलार्म सेट करें' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'लैरी को यह बताने के लिए एक अनुस्मारक सेट करें कि गेम सुबह 11 बजे ऑनलाइन बिक्री के लिए उपलब्ध होगा'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'अगले सोमवार को सुबह सबसे पहले कुत्ते को पशु चिकित्सक के पास लाने के लिए एक अनुस्मारक सेट करें'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'क्या आपको कृपया इसी तरह की कुछ और घटनाएँ मिल सकती हैं?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Multilinguality Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Hindi
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10328317373461013
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.05764815977330058
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Erinnere mich um 20 Uhr daran, „Orange Is The New Black“ anzusehen'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'Erinnern Sie mich daran, das Katzenstreu um 15:00 Uhr zu wechseln.'
+  '0' '8' '3']
+ ['Represent a sentence: ' 'Wie sieht die Prognose für die Woche aus?'
+  '0' '5' '7']
+ ...
+ ['Represent a sentence: ' 'Wie mache ich Punsch?' '0' '9' '7']
+ ['Represent a sentence: '
+  'Können Sie mir Unterhaltungsnachrichten für den 25. September geben?'
+  '0' '10' '2']
+ ['Represent a sentence: ' 'Wie viel Regen wird für morgen vorhergesagt?'
+  '0' '5' '6']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:German
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.627906976744186
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6513228379452453
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Δείξτε μου ημερομηνίες για μουσικά φεστιβάλ το 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'υπήρξαν ανεμοστρόβιλοι αυτή την εβδομάδα;'
+  '0' '5' '7']
+ ['Represent a sentence: ' 'Ρυθμίστε ένα διαφορετικό ξυπνητήρι' '0' '6'
+  '7']
+ ...
+ ['Represent a sentence: '
+  'βάλτε μια υπενθύμιση για να πείτε στον Λάρι ότι το παιχνίδι θα κυκλοφορήσει στις 11 π.μ. online'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Ορίστε μια υπενθύμιση για να φέρετε τον σκύλο στον κτηνίατρο την επόμενη Δευτέρα το πρώτο πράγμα το πρωί'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Μπορείτε να λάβετε κάποιες άλλες παρόμοιες εκδηλώσεις παρακαλώ;' '0'
+  '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Greek
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1511627906976744
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.13823377117575675
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Muéstrame fechas de festivales de música en 2018.' '0' '2' '4']
+ ['Represent a sentence: ' '¿Ha habido tornados esta semana?' '0' '5' '2']
+ ['Represent a sentence: '
+  'Recuérdame a las 8 p.m. que vea Orange Is The New Black' '0' '8' '6']
+ ...
+ ['Represent a sentence: '
+  'eliminar el recordatorio sobre la fiesta de joe la próxima semana' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'establecer un recordatorio para decirle a Larry que el juego sale a la venta en línea a las 11 a.m.'
+  '0' '8' '2']
+ ['Represent a sentence: '
+  'Establece un recordatorio para llevar al perro al veterinario el próximo lunes a primera hora de la mañana'
+  '0' '8' '3']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Spanish
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5804833561331509
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.577724450896235
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'y a-t-il eu des tornades cette semaine ?' '0'
+  '5' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi à 20h pour regarder Orange Is The New Black' '0' '8' '7']
+ ['Represent a sentence: '
+  'Rappelle-moi de changer la litière du chat à 15h00.' '0' '8' '1']
+ ...
+ ['Represent a sentence: '
+  'supprime le rappel concernant la fête de Joe la semaine prochaine' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'définir un rappel pour informer Larry que le jeu sera mis en vente à 11h en ligne'
+  '0' '8' '10']
+ ['Represent a sentence: '
+  'Définissez un rappel pour amener le chien chez le vétérinaire lundi prochain à la première heure du matin.'
+  '0' '8' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:French
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6165070679434564
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6348968975491164
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Nionyeshe tarehe za tamasha za muziki mwaka wa 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'kumekuwa na kimbunga wiki hii?' '0' '5' '1']
+ ['Represent a sentence: ' 'Weka kengele tofauti' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'Weka kikumbusho cha kumleta mbwa kwa daktari wa mifugo Jumatatu ijayo jambo la kwanza asubuhi'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'shikamana na iheartradio kama chaguo-msingi langu' '0' '4' '1']
+ ['Represent a sentence: '
+  'Je, unaweza kupata matukio zaidi yanayofanana na haya tafadhali?' '0'
+  '2' '9']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Swahili
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.20200638394892842
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.16080008759951045
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'สัปดาห์นี้มีพายุทอร์นาโดไหม?' '0' '5' '7']
+ ['Represent a sentence: ' 'ตั้งปลุกอื่น' '0' '6' '7']
+ ['Represent a sentence: '
+  'เตือนฉันเวลา 20.00 น. เพื่อรับชม Orange Is The New Black' '0' '8' '7']
+ ...
+ ['Represent a sentence: '
+  'ตั้งเตือนให้บอกแลร์รี่ว่าเกมจะวางจำหน่ายเวลา 11.00 น. ทางออนไลน์' '0'
+  '8' '7']
+ ['Represent a sentence: '
+  'ตั้งการเตือนให้พาสุนัขไปหาสัตวแพทย์ในวันจันทร์หน้าเป็นอย่างแรกในตอนเช้า'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'คุณช่วยมีกิจกรรมที่คล้ายกันนี้เพิ่มเติมได้ไหม?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Thai
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1292749658002736
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.10639400690964668
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Evaluating...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'remind me about the cardinals game this weekend' '0' '8' '2']
+ ['Represent a sentence: ' 'Is Kim online?' '0' '1' '7']
+ ['Represent a sentence: '
+  'were there any murders in Chicago last night?' '0' '10' '2']
+ ...
+ ['Represent a sentence: ' 'Remind me to watch church on TV Sunday 7am'
+  '0' '8' '6']
+ ['Represent a sentence: ' 'contact Kinley with Messenger' '0' '1' '0']
+ ['Represent a sentence: '
+  'Show Takisha Guyon MD parents birthdays to me' '0' '7' '0']]
+INFO:mteb.abstasks.AbsTaskClassification:========== Experiment 5/5 ==========
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 88 training sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Encoding 4386 test sentences...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Fitting logistic regression classifier...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect vocab sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['send news via Facebook that comes to you later' '0' '10']
+ ['send news via Facebook that gets to you later' '0' '10']
+ ['Message Joe to say he will be there in an instant' '0' '1']
+ ['Message Joe to say you will be there in an instant' '0' '1']
+ ['Text Josh to let him know about bringing potato salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing taco salad to his party next weekend.'
+  '0' '9']
+ ['Text Josh to let him know about bringing chicken salad to his party next weekend.'
+  '0' '9']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel i must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a major negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i get frustrated that these issues from my past have had a huge negative effect on my behavior and feel they must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel everyone must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a lasting negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a very negative effect on my behavior and feel you must be angry that i have not resolved them by now'
+  '3' '8']
+ ['i get frustrated that these issues from my past have had a significant negative effect on my behavior and feel people must be angry that i have not resolved them by now'
+  '3' '7']
+ ['i feel more violent than ever right now' '3' '4']
+ ['i am more violent than ever right now' '3' '2']
+ ['i Am more violent than ever right now' '3' '2']
+ ['i is more violent than ever right now' '3' '10']
+ ['i m more violent than ever right now' '3' '2']
+ ['i Feel more violent than ever right now' '3' '4']
+ ['i r more violent than ever right now' '3' '10']
+ ['i think more violent than ever right now' '3' '10']
+ ['i feels more violent than ever right now' '3' '10']
+ ['i believe more violent than ever right now' '3' '10']
+ ['i feel more frustrated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their actions' '3' '7']
+ ['i feel more confused and annoyed by their behavior' '3' '7']
+ ['i feel more confused and annoyed by their actions' '3' '7']
+ ['i feel more frustrated and annoyed by their incompetence' '3' '7']
+ ['i feel more alienated and annoyed by their behavior' '3' '7']
+ ['i feel more frustrated and annoyed by their inaction' '3' '1']
+ ['i feel more frustrated and annoyed by their behaviour' '3' '7']
+ ['i feel more isolated and annoyed by their behavior' '3' '7']
+ ['i feel more disgusted and annoyed by their behavior' '3' '7']
+ ['i cannot explain why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please break my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please be my friend i have heart and im not a heartless person'
+  '3' '0']
+ ['i cannot explain why but i need to say please open my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please take my advice i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please shake my hand i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot say why but i need to say please feel my pain i have heart and im not a heartless person'
+  '3' '4']
+ ['i cannot explain why but i need to say please read my blog i have heart and im not a heartless person'
+  '3' '10']
+ ['i cannot explain why but i need to say please hold my hand i have heart and im not a heartless person'
+  '3' '1']
+ ['i cannot explain why but i need to say please bless my heart i have heart and im not a heartless person'
+  '3' '4']
+ ['im all cooped up and impatient and annoyingly annoying' '3' '4']
+ ['im being cooped up and impatient and annoyingly annoying' '3' '4']
+ ['im all cooped up and impatient and annoyingly bored' '3' '2']
+ ['im totally cooped up and impatient and annoyingly annoying' '3' '4']
+ ['im completely cooped up and impatient and annoyingly annoying' '3' '4']
+ ['im always cooped up and impatient and annoyingly annoying' '3' '4']
+ ['im all cooped up and impatient and annoyingly happy' '3' '4']
+ ['im all cooped up and impatient and annoyingly impatient' '3' '4']
+ ['im all cooped up and impatient and annoyingly loud' '3' '4']
+ ['im all cooped up and impatient and annoyingly slow' '3' '4']
+ ['I would like to be available at noon please' '6' '8']
+ ['I would like to be there at noon please' '6' '2']
+ ['I would like to be seen at noon please' '6' '2']
+ ['I would like to be seated at noon please' '6' '2']
+ ['I would like to be here at noon please' '6' '2']
+ ['I would like to be released at noon please' '6' '10']
+ ['I would like to be back at noon please' '6' '3']
+ ['I would like to be called at noon please' '6' '1']
+ ['I would like to be dismissed at noon please' '6' '8']
+ ['Who separates from Creighton' '7' '1']
+ ['Who recruited from Creighton' '7' '1']
+ ['Show Text of Jolene' '7' '0']
+ ['Delete my reminder to visit Liberty University' '8' '2']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the funeral"
+  '8' '1']
+ ["I need to be reminded on Tuesday to send gifts to Joyce's daughter for the holidays"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the memorial"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the funeral"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send this to Joyce's daughter for the weekend"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send money to Joyce's daughter for the flowers"
+  '8' '0']
+ ["I need to be reminded on Tuesday to send flowers to Joyce's daughter for the holidays"
+  '8' '0']
+ ['What did Congress vote on ?' '10' '7']
+ ['What did Congress agree on ?' '10' '9']
+ ['What did Congress vote on Edit' '10' '1']
+ ['What did Congress agree on Edit' '10' '1']
+ ['What did Congress vote on next' '10' '1']
+ ['What did Congress disagree on ?' '10' '7']
+ ['What did Congress vote on »' '10' '7']
+ ['What did Congress vote on …' '10' '7']
+ ['What did Congress disagree on Edit' '10' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect robustness sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['i feel more ivolent than ever right now' '0' '7']
+ ['Set an alarm for p9m –' '0' '6']
+ ['please hsow your calls from mary from last week' '0' '1']
+ ...
+ ['call for granddaugther' '10' '1']
+ ['Play some Hot Rap umsic.' '10' '4']
+ ['Message Joe to say you will be there i nan instant' '10' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect ner sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Negative sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Incorrect Positive sentences
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Vocab
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8436363636363636
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.8052094123800123
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Robusness
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07454545454545454
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.07274081162151368
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:NER
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:negative
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:positive
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:1.0
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'मुझे 2018 में संगीत समारोहों की तारीखें दिखाएँ' '0' '2' '7']
+ ['Represent a sentence: ' 'क्या इस सप्ताह कोई बवंडर आया है?' '0' '5' '7']
+ ['Represent a sentence: ' 'एक अलग अलार्म सेट करें' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'मुझे ताकीशा गयोन एमडी के माता-पिता का जन्मदिन दिखाएँ' '0' '7' '0']
+ ['Represent a sentence: '
+  'अगले सोमवार को सुबह सबसे पहले कुत्ते को पशु चिकित्सक के पास लाने के लिए एक अनुस्मारक सेट करें'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'क्या आपको कृपया इसी तरह की कुछ और घटनाएँ मिल सकती हैं?' '0' '2' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Multilinguality Accuracies...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Hindi
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1265389876880985
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.06712384216124012
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Erinnere mich um 20 Uhr daran, „Orange Is The New Black“ anzusehen'
+  '0' '8' '2']
+ ['Represent a sentence: '
+  'Erinnern Sie mich daran, das Katzenstreu um 15:00 Uhr zu wechseln.'
+  '0' '8' '3']
+ ['Represent a sentence: ' 'Wie sieht die Prognose für die Woche aus?'
+  '0' '5' '7']
+ ...
+ ['Represent a sentence: ' 'Soll es heute in New York regnen?' '0' '5'
+  '2']
+ ['Represent a sentence: '
+  'Können Sie mir Unterhaltungsnachrichten für den 25. September geben?'
+  '0' '10' '2']
+ ['Represent a sentence: '
+  'Löschen Sie die Erinnerung an Joes Party nächste Woche' '0' '8' '2']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:German
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6559507523939808
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.666892284576156
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Δείξτε μου ημερομηνίες για μουσικά φεστιβάλ το 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'υπήρξαν ανεμοστρόβιλοι αυτή την εβδομάδα;'
+  '0' '5' '0']
+ ['Represent a sentence: ' 'Ρυθμίστε ένα διαφορετικό ξυπνητήρι' '0' '6'
+  '7']
+ ...
+ ['Represent a sentence: '
+  'βάλτε μια υπενθύμιση για να πείτε στον Λάρι ότι το παιχνίδι θα κυκλοφορήσει στις 11 π.μ. online'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Ορίστε μια υπενθύμιση για να φέρετε τον σκύλο στον κτηνίατρο την επόμενη Δευτέρα το πρώτο πράγμα το πρωί'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Μπορείτε να λάβετε κάποιες άλλες παρόμοιες εκδηλώσεις παρακαλώ;' '0'
+  '2' '0']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Greek
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.14523483812129503
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.12974402280992747
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Recuérdame a las 8 p.m. que vea Orange Is The New Black' '0' '8' '2']
+ ['Represent a sentence: '
+  'Recuérdame cambiar la arena para gatos a las 3:00 p.m.' '0' '8' '6']
+ ['Represent a sentence: ' '¿Cómo es el pronóstico para la semana?' '0'
+  '5' '9']
+ ...
+ ['Represent a sentence: '
+  'eliminar el recordatorio sobre la fiesta de joe la próxima semana' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'establecer un recordatorio para decirle a Larry que el juego sale a la venta en línea a las 11 a.m.'
+  '0' '8' '0']
+ ['Represent a sentence: '
+  'Establece un recordatorio para llevar al perro al veterinario el próximo lunes a primera hora de la mañana'
+  '0' '8' '3']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Spanish
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5417236662106704
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.5656564280367833
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'y a-t-il eu des tornades cette semaine ?' '0'
+  '5' '2']
+ ['Represent a sentence: '
+  'Rappelle-moi à 20h pour regarder Orange Is The New Black' '0' '8' '7']
+ ['Represent a sentence: '
+  'Rappelle-moi de changer la litière du chat à 15h00.' '0' '8' '3']
+ ...
+ ['Represent a sentence: ' "est-il censé pleuvoir à New York aujourd'hui"
+  '0' '5' '2']
+ ['Represent a sentence: '
+  'supprime le rappel concernant la fête de Joe la semaine prochaine' '0'
+  '8' '2']
+ ['Represent a sentence: '
+  'définir un rappel pour informer Larry que le jeu sera mis en vente à 11h en ligne'
+  '0' '8' '10']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:French
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6755585955312358
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.6855906838889929
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: '
+  'Nionyeshe tarehe za tamasha za muziki mwaka wa 2018' '0' '2' '7']
+ ['Represent a sentence: ' 'kumekuwa na kimbunga wiki hii?' '0' '5' '7']
+ ['Represent a sentence: ' 'Weka kengele tofauti' '0' '6' '7']
+ ...
+ ['Represent a sentence: '
+  'Weka kikumbusho cha kumleta mbwa kwa daktari wa mifugo Jumatatu ijayo jambo la kwanza asubuhi'
+  '0' '8' '9']
+ ['Represent a sentence: '
+  'shikamana na iheartradio kama chaguo-msingi langu' '0' '4' '1']
+ ['Represent a sentence: '
+  'Je, unaweza kupata matukio zaidi yanayofanana na haya tafadhali?' '0'
+  '2' '9']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Swahili
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.17054263565891473
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.1395222819844747
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'สัปดาห์นี้มีพายุทอร์นาโดไหม?' '0' '5' '7']
+ ['Represent a sentence: ' 'ตั้งปลุกอื่น' '0' '6' '7']
+ ['Represent a sentence: '
+  'เตือนฉันเวลา 20.00 น. เพื่อรับชม Orange Is The New Black' '0' '8' '7']
+ ...
+ ['Represent a sentence: '
+  'ตั้งเตือนให้บอกแลร์รี่ว่าเกมจะวางจำหน่ายเวลา 11.00 น. ทางออนไลน์' '0'
+  '8' '7']
+ ['Represent a sentence: '
+  'ตั้งการเตือนให้พาสุนัขไปหาสัตวแพทย์ในวันจันทร์หน้าเป็นอย่างแรกในตอนเช้า'
+  '0' '8' '7']
+ ['Represent a sentence: '
+  'คุณช่วยมีกิจกรรมที่คล้ายกันนี้เพิ่มเติมได้ไหม?' '0' '2' '7']]
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Thai
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.13178294573643412
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:0.11179390155518837
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:Evaluating...
+INFO:mteb.evaluation.evaluators.ClassificationEvaluator:[['Represent a sentence: ' 'Is Kim online?' '0' '1' '7']
+ ['Represent a sentence: '
+  'were there any murders in Chicago last night?' '0' '10' '2']
+ ['Represent a sentence: ' 'Share that first event with Malia' '0' '2'
+  '7']
+ ...
+ ['Represent a sentence: ' 'Details on where to vote' '0' '10' '7']
+ ['Represent a sentence: ' 'contact Kinley with Messenger' '0' '1' '0']
+ ['Represent a sentence: '
+  'Can you get some more events similar to this please?' '0' '2' '10']]
+INFO:mteb.evaluation.MTEB:Evaluation for MTOPDomainClassification on test took 2162.28 seconds
+INFO:mteb.evaluation.MTEB:Scores: {'en': {'accuracy': 0.9198358413132695, 'f1': 0.9174767633374209, 'accuracy_stderr': 0.009179694716377303, 'f1_stderr': 0.007544602916071228, 'main_score': 0.9198358413132695}, 'evaluation_time': 2162.28}

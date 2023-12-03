@@ -38,7 +38,7 @@
             "request": "launch",
             "program": "evaluation/MTEB/examples/evaluate_model.py",
              "args" : [
-            "--model_name", "models/outputs_l2e_4/",
+            "--model_name", "hkunlp/instructor-base",
             "--output_dir", "outputs",
             "--task_name", "MTOPDomainClassification",
             "--result_file", "results",

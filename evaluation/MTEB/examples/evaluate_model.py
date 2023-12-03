@@ -31,8 +31,11 @@ if __name__ == '__main__':
     parser.add_argument('--split', default='test',type=str)
     parser.add_argument('--batch_size', default=128,type=int)
     parser.add_argument('--samples_per_label', default=16,type=int)
-    parser.add_argument('--n_experiments', default=8,type=int)
+    parser.add_argument('--n_experiments', default=1,type=int)
     parser.add_argument('--seed', default=25,type=int)
+    parser.add_argument('--checkRobustness', default=True,type=bool)
+    parser.add_argument('--robustnessSamples', default=5,type=int)
+    parser.add_argument('--checkMultiLinguality', default=True,type=bool)
     
     args = parser.parse_args()
 
