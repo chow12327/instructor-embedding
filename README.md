@@ -11,6 +11,8 @@ To run the evaluation on the models generated for Project Checkpoint 1, please u
 
 Please refer to ***Error_Analysis.ipynb*** to run analysis on sentences logged during evaluation. All sentences logged during evaluation have a non matching predicted label from the test corpus. The sentences will need to be manually provided in sentence_a to evaluate. You can use sentence_b as is. This contains one sentence per label to run pair classification with sentences in sentence_a array.
 
+Sample Slurm scipts for training and evaluation are available in Slurm directory.
+
 Use our trained models from hugging face as follows:
 
 from sklearn.metrics.pairwise import cosine_similarity
