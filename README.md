@@ -11,6 +11,26 @@ To run the evaluation on the models generated for Project Checkpoint 1, please u
 
 Please refer to ***Error_Analysis.ipynb*** to run analysis on sentences logged during evaluation. All sentences logged during evaluation have a non matching predicted label from the test corpus. The sentences will need to be manually provided in sentence_a to evaluate. You can use sentence_b as is. This contains one sentence per label to run pair classification with sentences in sentence_a array.
 
+Use our trained models from hugging face as follows:
 
+from sklearn.metrics.pairwise import cosine_similarity
+from InstructorEmbedding import INSTRUCTOR
+model = INSTRUCTOR('chow12327/instructor_cmlm_wiki_multilingual')
+
+sentences_a = [['represent a sentence: ','set a reminder tomorrow for Steve to call Alex about a ride to the pool on saturday']]
+               
+sentences_b = [['represent a sentence: ','set a reminder  tomorrow for jodie to call karen about a ride to the pool on saturday'],
+               ['represent a sentence: ','can you enable video call']]
+
+embeddings_a = model.encode(sentences_a)
+embeddings_b = model.encode(sentences_b)
+similarities_ab = cosine_similarity(embeddings_a,embeddings_b)
+
+print(similarities_ab)
+
+The below models are available:
+chow12327/instructor_cmlm_wiki_multilingual - CMLM multilingual model trained on multi-lingual MEDI Dataset
+chow12327/instructor_cmlm_wiki - CMLM multilingual model trained on English MEDI Dataset
+chow12327/instructor_wikionly - GTR-T5 model trained on English MEDI Dataset
 
 
